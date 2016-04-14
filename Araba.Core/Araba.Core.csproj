@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Araba.Core</RootNamespace>
+    <AssemblyName>Araba.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AppConstants.cs" />
+    <Compile Include="Application\DTOs.cs" />
+    <Compile Include="Application\Enums.cs" />
+    <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Domain\DbTables\AttributeType.cs" />
+    <Compile Include="Domain\DbTables\BodyType.cs" />
+    <Compile Include="Domain\DbTables\Car.cs" />
+    <Compile Include="Domain\DbTables\Category.cs" />
+    <Compile Include="Domain\DbTables\City.cs" />
+    <Compile Include="Domain\DbTables\Color.cs" />
+    <Compile Include="Domain\DbTables\District.cs" />
+    <Compile Include="Domain\DbTables\FuelType.cs" />
+    <Compile Include="Domain\DbTables\GearType.cs" />
+    <Compile Include="Domain\DbTables\PlateType.cs" />
+    <Compile Include="Domain\DbTables\Role.cs" />
+    <Compile Include="Domain\DbTables\Tag.cs" />
+    <Compile Include="Domain\DbTables\UsageStatus.cs" />
+    <Compile Include="Domain\DbTables\User.cs" />
+    <Compile Include="Domain\DbTables\Brand.cs" />
+    <Compile Include="Domain\DbTables\Model.cs" />
+    <Compile Include="Domain\DbTables\Attribute.cs" />
+    <Compile Include="Domain\DbTables\CarImage.cs" />
+    <Compile Include="Domain\DbTables\UserType.cs" />
+    <Compile Include="Domain\DbTables\Version.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\DbViews\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

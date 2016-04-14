@@ -1,0 +1,10 @@
+C:\Users\lenovo\Desktop\projects\ArabaSitesi\Araba\Araba.Utilities\bin\Debug\Araba.Utilities.dll
+C:\Users\lenovo\Desktop\projects\ArabaSitesi\Araba\Araba.Utilities\bin\Debug\Araba.Utilities.pdb
+C:\Users\lenovo\Desktop\projects\ArabaSitesi\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\projects\ArabaSitesi\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.dll
+C:\Users\lenovo\Desktop\projects\ArabaSitesi\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.pdb
+F:\MvcYeniProjeler\Araba\Araba\Araba.Utilities\bin\Debug\Araba.Utilities.dll
+F:\MvcYeniProjeler\Araba\Araba\Araba.Utilities\bin\Debug\Araba.Utilities.pdb
+F:\MvcYeniProjeler\Araba\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.dll
+F:\MvcYeniProjeler\Araba\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.pdb
+F:\MvcYeniProjeler\Araba\Araba\Araba.Utilities\obj\Debug\Araba.Utilities.csprojResolveAssemblyReference.cache

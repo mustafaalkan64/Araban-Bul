@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Web", "Araba.Web\Araba.Web.csproj", "{413E42FE-A75B-4272-9266-473EE4297A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Core", "Araba.Core\Araba.Core.csproj", "{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Data", "Araba.Data\Araba.Data.csproj", "{050DAA5E-A3A8-4D34-9F1B-D33D2C3ABCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Service", "Araba.Service\Araba.Service.csproj", "{F5EC695A-E570-4E01-905A-DB9B9D8D83B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Web.Framework", "Araba.Web.Framework\Araba.Web.Framework.csproj", "{E7BE9874-9179-4F29-A294-5F7220C47E73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.IOC", "Araba.IOC\Araba.IOC.csproj", "{207B8944-B9BE-445F-926F-EB16A4926DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araba.Utilities", "Araba.Utilities\Araba.Utilities.csproj", "{1969AB6E-54A8-4E1C-84B3-56F7F3774023}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alirizaadiyahsi.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Araba.Core\\Araba.Core.csproj
+		SccProjectName1 = Araba.Core
+		SccLocalPath1 = Araba.Core
+		SccProjectUniqueName2 = Araba.Data\\Araba.Data.csproj
+		SccProjectName2 = Araba.Data
+		SccLocalPath2 = Araba.Data
+		SccProjectUniqueName3 = Araba.IOC\\Araba.IOC.csproj
+		SccProjectName3 = Araba.IOC
+		SccLocalPath3 = Araba.IOC
+		SccProjectUniqueName4 = Araba.Service\\Araba.Service.csproj
+		SccProjectName4 = Araba.Service
+		SccLocalPath4 = Araba.Service
+		SccProjectUniqueName5 = Araba.Utilities\\Araba.Utilities.csproj
+		SccProjectName5 = Araba.Utilities
+		SccLocalPath5 = Araba.Utilities
+		SccProjectUniqueName6 = Araba.Web.Framework\\Araba.Web.Framework.csproj
+		SccProjectName6 = Araba.Web.Framework
+		SccLocalPath6 = Araba.Web.Framework
+		SccProjectUniqueName7 = Araba.Web\\Araba.Web.csproj
+		SccProjectName7 = Araba.Web
+		SccLocalPath7 = Araba.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{413E42FE-A75B-4272-9266-473EE4297A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413E42FE-A75B-4272-9266-473EE4297A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413E42FE-A75B-4272-9266-473EE4297A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413E42FE-A75B-4272-9266-473EE4297A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FF0922-9FB0-4595-A611-0B3F7B6BACA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050DAA5E-A3A8-4D34-9F1B-D33D2C3ABCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050DAA5E-A3A8-4D34-9F1B-D33D2C3ABCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050DAA5E-A3A8-4D34-9F1B-D33D2C3ABCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050DAA5E-A3A8-4D34-9F1B-D33D2C3ABCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5EC695A-E570-4E01-905A-DB9B9D8D83B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5EC695A-E570-4E01-905A-DB9B9D8D83B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5EC695A-E570-4E01-905A-DB9B9D8D83B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EC695A-E570-4E01-905A-DB9B9D8D83B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BE9874-9179-4F29-A294-5F7220C47E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BE9874-9179-4F29-A294-5F7220C47E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BE9874-9179-4F29-A294-5F7220C47E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BE9874-9179-4F29-A294-5F7220C47E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207B8944-B9BE-445F-926F-EB16A4926DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207B8944-B9BE-445F-926F-EB16A4926DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207B8944-B9BE-445F-926F-EB16A4926DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207B8944-B9BE-445F-926F-EB16A4926DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1969AB6E-54A8-4E1C-84B3-56F7F3774023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1969AB6E-54A8-4E1C-84B3-56F7F3774023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1969AB6E-54A8-4E1C-84B3-56F7F3774023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1969AB6E-54A8-4E1C-84B3-56F7F3774023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

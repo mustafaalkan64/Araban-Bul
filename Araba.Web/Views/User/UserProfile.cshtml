@@ -1,0 +1,123 @@
+﻿@model Araba.Core.Domain.DbTables.User
+
+@{
+    ViewBag.Title = Model.UserName;
+}
+
+<script>
+    $(function () {
+        $("#userProfileDescription").find(".well").height($("#userProfileDetail").height() - 57).css({ "overflow": "auto" });
+    });
+</script>
+
+<h4>@Model.RealName (<a href="@Url.Action("EditProfile","User")">Düzenle</a>)</h4>
+<hr />
+<div class="row">
+    <div class="col-sm-2" id="userProfilePic">
+        <img src="~/@Model.ImgUrlSmall" alt="@Model.RealName" class="img-thumbnail">
+    </div>
+    <div class="col-sm-5" id="userProfileDetail">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                    <p class="form-control-static">@Model.Email</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Web Sitesi</label>
+                <div class="col-sm-9">
+                    <p class="form-control-static">@Model.Website</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Telefon 1</label>
+                <div class="col-sm-9">
+                    <p class="form-control-static">@Model.Phone1</p>
+                </div>
+            </div>
+            @if (!String.IsNullOrEmpty(Model.Phone2))
+            {
+                <div class="form-group control-label">
+                    <label class="col-sm-3">Telefon 2</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.Phone2</p>
+                    </div>
+                </div>
+            }
+            @if (!String.IsNullOrEmpty(Model.Phone3))
+            {
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Telefon 3</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.Phone3</p>
+                    </div>
+                </div>
+            }
+            @if (!String.IsNullOrEmpty(Model.Fax))
+            {
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Fax</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.Fax</p>
+                    </div>
+                </div>
+            }
+            @if (Model.District != null)
+            {
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Şehir</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.District.City.Name</p>
+                    </div>
+                </div>
+            }
+            @if (Model.District != null)
+            {
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">İlçe</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.District.Name</p>
+                    </div>
+                </div>
+            }
+            @if (!String.IsNullOrEmpty(Model.Adress))
+            {
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Adres</label>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">@Model.Adress</p>
+                    </div>
+                </div>
+            }
+        </form>
+    </div>
+    <div class="col-sm-5" id="userProfileDescription">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="form-control-static well">@Model.Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-sm-6">
+        <h4>(@Model.Cars.Count()) İlanlarım</h4>
+        <hr />
+        @foreach (var car in Model.Cars)
+        {
+            <div>@car.Title</div>
+        }
+    </div>
+    <div class="col-sm-6">
+        <h4>(@Model.Cars.Count()) Favorilerim</h4>
+        <hr />
+        @foreach (var car in Model.FavoriteCars)
+        {
+            <div>@car.Title</div>
+        }
+    </div>
+</div>
